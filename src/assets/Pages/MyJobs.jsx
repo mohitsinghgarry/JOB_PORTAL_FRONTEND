@@ -12,7 +12,7 @@ const MyJobs = () => {
 
   useEffect(() => {
     setIsLoading(true)
-    fetch(`http://localhost:3000/myJobs/kshitijbsingh03feb@gmail.com`).then(res => res.json()).then(data => {
+    fetch(`https://job-portal-backend-lryt.onrender.com/myJobs/kshitijbsingh03feb@gmail.com`).then(res => res.json()).then(data => {
       setJobs(data);
       setIsLoading(false);
     });
@@ -46,7 +46,7 @@ const MyJobs = () => {
 
   const handleDelete = (id) => {
     // console.log(id);
-    fetch(`http://localhost:3000/job/${id}`, {
+    fetch(`https://job-portal-backend-lryt.onrender.com/job/${id}`, {
       method: "DELETE"
     })
       .then((res) => res.json)
@@ -69,12 +69,12 @@ const MyJobs = () => {
             id="search"
             name="search"
             placeholder="Search for Job Profile"
-            className="py-2 pl-3 border focus-within:ring-indigo-600 lg:w-6/12 mb-4 w-full"
+            className="py-2 pl-3 border border-yellow-500 focus-within:ring-yellow-500 lg:w-6/12 mb-4 w-full"
             style={{ // Inline style to set focus ring color
-              outlineColor: '#4F46E5', // Replace with your desired blue color
+              outlineColor: 'yellow', // Replace with your desired blue color
             }}
           />
-          <button className="bg-blue text-white font-semibold px-8 py-2 rounded-sm mb-4" onClick={handleSearch}>
+          <button className="bg-yellow-500 text-white font-semibold px-8 py-2 rounded-sm mb-4" onClick={handleSearch}>
             Search
           </button>
         </div>
@@ -90,7 +90,7 @@ const MyJobs = () => {
                   <h3 className="font-semibold text-base text-blueGray-700">All Jobs</h3>
                 </div>
                 <div className="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
-                  <Link to="/post-job">  <button className="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">Post a New Job</button> </Link>
+                  <Link to="/post-job">  <button className="bg-yellow-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">Post a New Job</button> </Link>
                 </div>
               </div>
             </div>
@@ -185,7 +185,7 @@ const MyJobs = () => {
             <div className="flex flex-wrap items-center md:justify-between justify-center">
               <div className="w-full md:w-6/12 px-4 mx-auto text-center">
                 <div className="text-sm text-blueGray-500 font-semibold py-1">
-                  Copyright by &copy; <a href="https://lakshaydhoundiyalportfolio.netlify.app" className="text-blue hover:text-gray-800" target="_blank">Lakshay Dhoundiyal</a>. <a href="https://www.creative-tim.com" className="text-blueGray-500 hover:text-blueGray-800" target="_blank">All Rights Reserved.</a>
+                  Copyright by &copy; <a href="https://mohitsinghport.netlify.app/" className="text-blue hover:text-gray-800" target="_blank">Mohit Singh</a>. <a className="text-blueGray-500 hover:text-blueGray-800" target="_blank">All Rights Reserved.</a>
                 </div>
               </div>
             </div>

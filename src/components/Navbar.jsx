@@ -37,7 +37,7 @@ const Navbar = () => {
                     />
                     <circle cx = "16.9857" cy = "17.4857" r="12.0143" fill = "#3575E2" />
                 </svg>
-                <span className="">JobJunction</span>
+                <span className="">OpportunityOrbit</span>
             </a>
 
             {/* {NAV ITEMS FOR LARGE DEVICES} */}
@@ -59,7 +59,7 @@ const Navbar = () => {
             {/* SIGNUP AND LOGIN BUTTON */}
             <div className="text-base text-primary font-medium space-x-5 hidden lg:block">
                 <Link to = "/login" className='py-2 px-5 border rounded'>Login</Link>
-                <Link to = "/sign-up" className='py-2 px-5 border rounded bg-blue text-white'>Sign up</Link>
+                <Link to = "/sign-up" className='py-2 px-5 border rounded bg-yellow-500 text-white'>Sign up</Link>
                 {/* <Link to = "/LogoutButton" className='py-2 px-5 border rounded bg-blue text-white'>Logout</Link> */}
             </div>
 

@@ -19,7 +19,7 @@ const UpdateJob = () => {
       const onSubmit = (data) => {
         data.skills = selectedOption;
         // console.log(data);
-        fetch(`http://localhost:3000/update-job/${id}`, {
+        fetch(`https://job-portal-backend-lryt.onrender.com/update-job/${id}`, {
           method: "PATCH",
           headers: {'content-type': 'application/json'},
           body: JSON.stringify(data)
@@ -31,7 +31,7 @@ const UpdateJob = () => {
             alert("Job Updated Successfully");
           }
           reset()
-          window.location.href = 'http://localhost:3000/my-job';
+          window.location.href = 'https://job-portal-backend-lryt.onrender.com/my-job';
         });
         };
 
@@ -184,9 +184,7 @@ const UpdateJob = () => {
             {...register("postedBy", { required: true })} className='create-job-input'/>
     
     </div>
-    
-    
-          <input type="submit" className='block bg-blue text-white font-semibold px-8 py-2 rounded-sm cursor-pointer'/>
+          <input style={{backgroundColor:"yellow"}} type="submit" className='block text-white font-semibold px-8 py-2 rounded-sm cursor-pointer'/>
         </form>
     </div>
         </div>

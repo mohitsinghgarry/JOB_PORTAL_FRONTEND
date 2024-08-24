@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         {
           path: "/edit-job/:id",
           element: <UpdateJob/>,
-          loader: ({params}) => fetch(`${import.meta.env.URL}/all-jobs/${params.id}`)
+          loader: ({params}) => fetch(`https://job-portal-backend-lryt.onrender.com/all-jobs/${params.id}`)
         },
         {
           path: "/job/:id",

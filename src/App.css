@@ -5,7 +5,7 @@ body{
 }
 
 .active{
-  color: #3575E2;
+  color: yellow;
   font-weight: 500;
 }
 
@@ -105,7 +105,7 @@ li {
 }
 
 .all {
-  background: linear-gradient(blue, crimson);
+  background: linear-gradient(rgb(195, 255, 0), rgb(20, 220, 53));
 }
 
 .sidebar-label-container:hover input ~ .checkmark {
@@ -113,7 +113,7 @@ li {
 }
 
 .sidebar-label-container input:checked ~ .checkmark {
-  background-color: #2196f3;
+  background-color: #2ff321;
 }
 
 .checkmark:after {

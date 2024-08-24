@@ -76,7 +76,7 @@ const Newsletter = () => {
             value="Subscribe"
             required
             onClick={handleSubscribe} // Handle submit button click
-            className="w-full block py-2 pl-3 border focus:outline-none bg-blue rounded-sm text-white cursor-pointer font-semibold"
+            className="w-full block py-2 pl-3 border focus:outline-none bg-yellow-500 rounded-sm text-white cursor-pointer font-semibold"
           />
         </div>
       </div>
@@ -94,7 +94,7 @@ const Newsletter = () => {
             id="resumeInput"
             accept=".pdf, .doc, .docx" // Specify allowed file types
             onChange={handleResumeUpload} // Handle file selection change
-            className="w-full block py-2 pl-3 border focus:outline-none bg-blue rounded-sm text-white cursor-pointer font-semibold"
+            className="w-full block py-2 pl-3 border focus:outline-none bg-yellow-500 rounded-sm text-white cursor-pointer font-semibold"
           />
           {/* Removed the button as it's unnecessary with a file input */}
         </div>
